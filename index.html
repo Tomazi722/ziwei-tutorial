@@ -6,121 +6,106 @@
     <title>紫微斗数入门教程</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            margin: 20px;
-            background-color: #f8f9fa;
-            color: #343a40;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
         }
-        h1, h2, h3 {
-            color: #495057;
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        p {
-            margin-bottom: 10px;
+        header h1 {
+            margin: 0;
+            font-size: 24px;
         }
         nav {
-            margin-bottom: 20px;
+            background-color: #333;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        nav a {
-            text-decoration: none;
-            color: #007bff;
-            margin-right: 15px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        ul {
+        nav ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
+            text-align: center;
         }
-        ul li {
-            margin-bottom: 5px;
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
         }
-        ul li a {
+        nav ul li a {
+            color: white;
             text-decoration: none;
-            color: #007bff;
+            font-size: 16px;
+            transition: color 0.3s;
         }
-        ul li a:hover {
-            text-decoration: underline;
+        nav ul li a:hover {
+            color: #ffdd57;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        h3 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
+
+<header>
     <h1>紫微斗数入门教程</h1>
+</header>
 
-    <nav>
-        <ul>
-            <li><a href="#basic-concepts">1. 须了解的基本概念</a>
-                <ul>
-                    <li><a href="#heavenly-stems">天干与地支</a></li>
-                    <li><a href="#five-elements">五行生克制化</a></li>
-                    <li><a href="#charting">排盘基础</a></li>
-                    <li><a href="#twelve-palaces">十二宫的定义与实际应用</a></li>
-                    <li><a href="#star-nature">星性基础</a></li>
-                    <li><a href="#palace-star-relationship">宫与星之间的相互关系</a></li>
-                    <li><a href="#star-star-relationship">星与星之间的相互关系</a></li>
-                    <li><a href="#pattern-overview">格局概述</a></li>
-                    <li><a href="#four-transformations">四化星的应用</a></li>
-                    <li><a href="#life-chart">命盘与实际生活的配合</a></li>
-                </ul>
-            </li>
-            <li><a href="#learning-process">2. 紫微斗数学习的流程</a>
-                <ul>
-                    <li><a href="#history">斗数历史</a></li>
-                    <li><a href="#heavenly-stems-basics">天干与地支基础</a></li>
-                    <li><a href="#palace-positioning">十二宫定位及排盘原理</a></li>
-                    <li><a href="#star-nature-pattern">斗数星性与格局</a></li>
-                    <li><a href="#four-transformations-application">斗数四化与实际应用</a></li>
-                </ul>
-            </li>
-            <li><a href="#twelve-palaces-detail">3. 十二宫详解</a>
-                <ul>
-                    <li><a href="#life-palace">命宫</a></li>
-                    <li><a href="#parents-palace">父母宫</a></li>
-                    <li><a href="#siblings-palace">兄弟宫</a></li>
-                    <li><a href="#spouse-palace">夫妻宫</a></li>
-                    <li><a href="#children-palace">子女宫</a></li>
-                    <li><a href="#wealth-palace">财帛宫</a></li>
-                    <li><a href="#health-palace">疾厄宫</a></li>
-                    <li><a href="#migration-palace">迁移宫</a></li>
-                    <li><a href="#servants-palace">奴仆宫（朋友宫）</a></li>
-                    <li><a href="#career-palace">事业宫</a></li>
-                    <li><a href="#property-palace">田宅宫</a></li>
-                    <li><a href="#fortune-palace">福德宫</a></li>
-                </ul>
-            </li>
-            <li><a href="#great-limit-philosophy">4. 大限流年与宫位哲学</a>
-                <ul>
-                    <li><a href="#great-limit-method">大限起法</a></li>
-                    <li><a href="#annual-four-transformations">流年四化分析</a></li>
-                    <li><a href="#palace-philosophy">宫位哲学详解</a></li>
-                </ul>
-            </li>
-            <li><a href="#main-star-features">5. 主星特质与分类</a>
-                <ul>
-                    <li><a href="#north-south-star-groups">北斗星群与南斗星群</a></li>
-                    <li><a href="#seven-lucky-six-evil-stars">七吉星与六煞星详解</a></li>
-                    <li><a href="#other-stars">其他星曜分析</a></li>
-                </ul>
-            </li>
-            <li><a href="#structure-analysis">6. 格局详解</a>
-                <ul>
-                    <li><a href="#definition-impact">格局的定义与影响</a></li>
-                    <li><a href="#heavenly-stems-analysis">干支局、五行局、四正局、四偶局、四库局等</a></li>
-                    <li><a href="#rich-longevity-formation">富贵寿考星聚成局</a></li>
-                    <li><a href="#common-patterns">常见格局分析（好格局与坏格局）</a></li>
-                </ul>
-            </li>
-            <li><a href="#four-transformations-detail">7. 四化星详解</a>
-                <ul>
-                    <li><a href="#definition-application">四化星的定义与作用</a></li>
-                    <li><a href="#quick-reference">四化星速查表</a></li>
-                    <li><a href="#impact-analysis">四化星影响分析</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="#basic-concepts">须了解的基本概念</a></li>
+        <li><a href="#learning-process">紫微斗数学习的流程</a></li>
+        <li><a href="#twelve-palaces-detail">十二宫详解</a></li>
+        <li><a href="#great-limit-philosophy">大限流年与宫位哲学</a></li>
+        <li><a href="#main-star-features">主星特质与分类</a></li>
+        <li><a href="#structure-analysis">格局详解</a></li>
+        <li><a href="#four-transformations-detail">四化星详解</a></li>
+    </ul>
+</nav>
 
+<div class="container">
     <h2 id="basic-concepts">1. 须了解的基本概念</h2>
     <h3 id="heavenly-stems">天干与地支</h3>
     <p>天干包括十天干：甲、乙、丙、丁、戊、己、庚、辛、壬、癸。地支包括十二地支：子、丑、寅、卯、辰、巳、午、未、申、酉、戌、亥。</p>
@@ -159,7 +144,7 @@
     <h3 id="heavenly-stems-basics">天干与地支基础</h3>
     <p>天干与地支的基础知识，如何在紫微斗数中应用。</p>
 
-    <h3 id="palace-positioning">十二宫定位及排盘原理</h3>
+    <h3 id="palace-positioning">十二宫定位及排盘原理</h>
     <p>介绍如何根据出生时间来定位十二宫，以及排盘的基本原理。</p>
 
     <h3 id="star-nature-pattern">斗数星性与格局</h3>
@@ -247,6 +232,11 @@
 
     <h3 id="impact-analysis">四化星影响分析</h3>
     <p>分析了四化星的影响及其在不同宫位中的作用。</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 紫微斗数教程</p>
+</footer>
 
 </body>
 </html>
